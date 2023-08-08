@@ -1,0 +1,29 @@
+# Some network parameters are not set here.
+
+# LSTM general
+lstm_units: 600
+
+# LSTMPolicy
+sub_policies: 14
+sub_policies_neg: 9
+sub_policy_ops: 1
+sub_policy_op_priority: 10
+sub_policy_op_round: 3
+sub_policy_op_mag1: 1
+sub_policy_op_mag2: 1
+
+
+# RL Hyper-parameters
+epochs: 1000
+
+# PG
+decay: 0.95
+lr: 0.005
+use_ppo: true
+use_adv: true
+eps: 0.005
+iter: 5
+
+# Others
+cuda: true
+
