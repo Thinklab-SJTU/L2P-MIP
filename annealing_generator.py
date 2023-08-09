@@ -158,9 +158,6 @@ if __name__ == '__main__':
     config_file = open("src/config.yaml")
     configs = yaml.load(config_file, Loader=yaml.FullLoader)
 
-    # Problem = "data/datasetv1_220522/medium/corlat/train/cor-lat-2f+r-u-10-10-10-5-100-3.300.b342.000000.prune2.lp"
-    # get_best_presolves([Problem], configs, 0)
-
     ps = []
     for i in range(len(Problem_sets)):
         p = Process(target=get_best_presolves, args=(Problem_sets[i], configs, i))
