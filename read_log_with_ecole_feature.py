@@ -23,18 +23,6 @@ if __name__ == '__main__':
                 instance_id = data['instance'].name
                 if instance_id not in feature_mapping:
                     feature_mapping[instance_id] = path
-                    # with open("data/ecole_feature/feature_mapping.csv", "a") as f:
-                    #     writer = csv.writer(f)
-                    #     writer.writerow([instance_id, path])
-
-    # feature_mapping = {}
-    # csv_reader = csv.reader(open("data/ecole_feature/feature_mapping.csv"))
-    # for line in csv_reader:
-    #     feature_mapping[line[0]] = line[1]
-
-    # title = 'data'  # prefix of the instance path
-    # DATASET = 'medium_corlat_test'
-    # title = 'data/datasetv1_220522/medium/corlat/test/'
 
     f = open(name)
     line = f.readline()

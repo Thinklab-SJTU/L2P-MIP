@@ -128,7 +128,7 @@ def get_best_presolve(Problem, configs, instance_id, process_id):
 
 if __name__ == '__main__':
     DATASET = "medium_mik_train"
-    DATASET_dir = "data/datasetv1_220522/medium/mik/train/"
+    DATASET_dir = "data/mik/train/"
     process_num = 20
     Problem_sets = [[] for _ in range(process_num)]
 
@@ -152,7 +152,7 @@ if __name__ == '__main__':
                 count = (count + 1)
 
     print("Hello World! {} Instances to be solved".format(count))
-    # with open('experiments/{}.json'.format(DATASET), 'r', encoding='utf-8') as f:
+    # with open('experiments/{}.json'.format(DATASET), 'r') as f:
     #     Problem_set = json.load(f)
     #
     config_file = open("src/config.yaml")

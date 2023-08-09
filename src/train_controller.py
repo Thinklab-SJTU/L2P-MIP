@@ -10,7 +10,7 @@ def train_controller_main(configs):
     l_list = []
 
     test_set = None
-    with open('mip_list.json','r',encoding='utf-8') as f :
+    with open('mip_list.json','r') as f :
         test_set = json.load(f)
 
     controller = PGController(configs)
