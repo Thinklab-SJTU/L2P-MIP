@@ -1,6 +1,6 @@
 ## L2P-MIP
 
-This repo provides code for L2P-MIP: Learning to Presolve for Mixed Integer Programming
+This repo provides code for 'L2P-MIP: Learning to Presolve for Mixed Integer Programming', which is accepted by ICLR 2024.
 
 ## Installation
 
